@@ -1,0 +1,354 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #3b2670;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #3b2670;
+}
+.uni-padding{
+    padding: 0 40px;
+}
+#mobile-menu, #navmenu ul #mobile-cross{
+    display: none;
+}
+.design-exterior-500{
+    display: none;
+}
+/* Header */
+header{}
+#navbar{
+    height: 60px;
+    overflow: auto;
+    clear: both;
+}
+.logo{
+    width: 20%;
+    float: left;
+    margin-top: 10px;
+}
+.logo img{
+    width: 120px;
+    float: left;
+}
+#navmenu{
+    width: 60%;
+    float: left;
+    margin-top: 20px;
+}
+#navmenu ul{
+    text-align: center;
+}
+#navmenu ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+#navmenu ul li a{}
+.contact-number{
+    width: 20%;
+    float: right;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 10px;
+}
+.contact-number img{
+    width: 40px;
+    margin-right: 10px;   
+}
+/* Banner */
+#banner{
+    background: url(../images/banner-top.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.banner-text{
+    width: 40%;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.banner-text h1{
+    font-size: 40px;
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: -10px;
+}
+.top-title-line{
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.top-title-line img{
+    width: 50px;
+}
+.banner-text h3{
+    font-size: 25px;
+    font-weight: normal;
+}
+.banner-text a, .painter-text a{
+    display: block;
+    background: url(../Buttons/button-top-banner.png) no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    margin-top: 100px;
+}
+.banner-text .google-top{
+    width: 150px;
+    margin-top: 30px;
+}
+/* Residential  */
+#residential-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: auto;
+}
+.section-title{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.title-line-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.title-line-icon .title-icon{
+    width: 40px;
+    margin: 0px 20px;
+}
+.title-line-icon .title-line{
+    width: 300px;
+}
+.section33{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0 30px;
+    height: 350px;
+    position: relative;
+}
+.section33 img{
+    width: 300px;
+    margin-bottom: 20px;
+}
+.section33 h3{
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #3b2670;
+}
+.section33 p{
+    color: #363636;
+    text-align: left;
+}
+.resident-button{
+    position: absolute;
+    bottom: 0;
+}
+.resident-button .btn-fill{
+    display: inline-block;
+    background: #e97530;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 65px;
+}
+.resident-button .btn-outline{
+    display: inline-block;
+    border: 1px solid #3b2670;
+    padding: 10px 30px;
+    font-size: 15px;
+}
+/* Painter */
+#painter{
+    background: url(../images/banner-text.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.painter-text{
+    width: 40%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.painter-title{
+    border: 3px solid #3b2670;
+    padding: 20px 0 20px 20px;
+    margin-bottom: 50px;
+}
+.painter-title h2{
+    font-size: 30px;
+}
+.painter-text p{
+    font-size: 15px;
+    color: #373737;
+}
+.painter-text a{
+    text-align: center;
+    margin-top: 50px;
+}
+/* Design Section */
+#design-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: auto;
+}
+.design-grid{
+    overflow: auto;
+}
+.design50{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.design50 .design-img{
+    width: 100%;
+    
+}
+.design50 .design-icon{
+    width: 150px;
+    position: absolute;
+    top: 30%;
+}
+.design50 .design-icon-2{
+    width: 150px;
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+.design50 .design-text{
+    padding-left: 150px;
+    padding-top: 50px;
+}
+.design-text h3{
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+.design-text ul{}
+.design-text ul li{
+    font-size: 15px;
+    color: #373737;
+    margin-bottom: 10px;
+}
+.design-text ul li img{
+    width: 20px;
+    margin-right: 5px;
+}
+/* Review Section */
+.section33 .review-img{
+    margin-bottom: 0;
+}
+.section33 h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.section33 .btn-review{
+    display: inline-block;
+    border: 1px solid #3b2670;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.review-height{
+    height: 250px;
+}
+/* Footer Top Section */
+#footer-top-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #F6F1EB;
+    overflow: auto;
+}
+.address-info{
+    clear: both;
+    overflow: auto;
+    margin-bottom: 40px;
+}
+.section25{
+    width: 25%;
+    float: left;
+    text-align: center;
+    overflow: auto;
+}
+.section25 .footer-logo{
+   width: 250px;
+  
+}
+.section25 .footer-icon{
+    width: 40px;
+}
+.address{
+    margin-top: 40px;
+}
+.icon-sec{
+    width: 30%;
+    float: left;
+    text-align: right;
+}
+.icon-sec img{
+    width: 40px;
+}
+.info-sec{
+    width: 65%;
+    float: left;
+    text-align: left;
+    margin-left: 5px;
+    font-weight: 700;
+    color: #3b2670;
+}
+/* bottom-nav-section */
+.bottom-nav-section{
+    overflow: auto;
+    clear: both;
+    margin-left: 125px;
+}
+.section20{
+    width: 20%;
+    float: left;
+}
+.section20 img{
+    width: 150px;
+}
+.section80{
+    width: 80%;
+    float: left;
+    margin-top: 30px;
+    text-align: right;
+}
+.bottom-nav ul{
+    display: flex;
+}
+.bottom-nav ul li{
+    margin-left: 20px;
+    font-size: 18px;
+}
+.bottom-nav ul .exterior a{
+    background: #3b2670;
+    color: #fff;
+    padding: 10px 20px;
+}
+/* Footer */
+footer{
+    background: #3b2670;
+    padding: 20px 0;
+    text-align: center;
+}
+footer p{
+    color: #fff;
+    font-size: 18px;
+}
