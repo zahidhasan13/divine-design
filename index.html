@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- FavIcon -->
-        <link
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="./images/favicon/apple-touch-icon.png"
+            href="./Icons"
         />
         <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="./images/favicon/favicon-32x32.png"
+            href="./Icons/favicon/favicon-32x32.png"
         />
         <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="./images/favicon/favicon-16x16.png"
+            href="./Icons/favicon/favicon-16x16.png"
         />
-        <link rel="manifest" href="./images/favicon/site.webmanifest" />
+        <link rel="manifest" href="./Icons/favicon/site.webmanifest" />
         <link
             rel="mask-icon"
-            href="./images/favicon/safari-pinned-tab.svg"
+            href="./Icons/favicon/safari-pinned-tab.svg"
             color="#5bbad5"
         />
-        <title>Divine Design</title>
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="./css/style.css">
-        <!-- Responsive -->
-        <link rel="stylesheet" href="./css/responsive.css">
-    </head>
-    <body>
-        <!-- Headre Section -->
-        <header>
-            <div id="navbar"class="uni-padding">
+    <title>Divine Design</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- ======== Header Section Start ======== -->
+    <header>
+        <div class="container">
+            <div class="row">
                 <div class="logo">
                     <img src="./images/logo-top.png" alt="">
-                </div>
-                <div id="mobile-menu">
-                    Menu<i class="fa-solid fa-bars" onclick="openMenu()"></i>
                 </div>
                 <nav id="navmenu">
                     <ul>
@@ -57,214 +53,240 @@
                         <li><a href="">Contact Us</a></li>
                     </ul>
                 </nav>
+                <div id="mobile-menu">
+                    Menu<i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </div>
                 <div class="contact-number">
-                    <img src="./Icons/icon-top-phone.png" alt="">
-                    <span>Michigan: (586) 277-2097</span>
+                    <span class="top-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                    <span class="top-contact">Michigan: <strong>(586) 277-2097</strong></span>
                 </div>
             </div>
-            <!-- Banner -->
-            <section id="banner" class="uni-padding">
-                <div class="banner-text">
-                    <h1>DIVINE DESIGN PAINTING SHOULD BE YOUR<h1>
-                    <div class="top-title-line">
-                        <img src="./images/top-title-line.jpg" alt="">
-                    </div>
-                    <h3>QUALITY PAINTING SERVICE</h3>
-                    <a href="">CONTACT US NOW</a>
-                    <img src="./Icons/icon-top-google.png" alt="" class="google-top">
+        </div>
+    </header>
+    <!-- ======== Header Section End ======== -->
+    <!-- ======== Top Banner Section Start ======== -->
+    <section id="banner">
+        <div class="container">
+            <div class="banner-text">
+                <h1>DIVINE DESIGN PAINTING SHOULD BE YOUR<h1>
+                <div class="top-title-line">
+                    <img src="./images/top-title-line.jpg" alt="">
                 </div>
-            </section>
-        </header>
-        <!-- Residential Section -->
-        <section id="residential-section" class="uni-padding">
-            <h1 class="section-title">Residential & Commercial Paint Contractor</h1>
-            <div class="title-line-icon text-center">
-                <img src="./images/title-line.jpg" alt="" class="title-line">
-                <img src="./Icons/icon-title-residential.jpg" alt="" class="title-icon">
-                <img src="./images/title-line.jpg" alt="" class="title-line">
+                <h3>QUALITY PAINTING SERVICE</h3>
+                <a href="">CONTACT US NOW</a>
+                <img src="./Icons/icon-top-google.png" alt="" class="google-top">
             </div>
-            <div class="section33">
+        </div>
+    </section>
+    <!-- ======== Top Banner Section End ======== -->
+    <!-- ======== Residential Section Start ======== -->\
+    <section id="resident-section" class="container">
+        <h2 class="section-title">Residential & Commercial Paint Contractor</h2>
+        <div class="title-line-icon text-center">
+            <img src="./images/title-line.jpg" alt="" class="title-line">
+            <img src="./Icons/icon-title-residential.jpg" alt="" class="title-icon">
+            <img src="./images/title-line.jpg" alt="" class="title-line">
+        </div>
+        <div class="row column">
+            <div class="resident-col">
                 <img src="./images/pic-interior.png" alt="">
-                <h3>Interior Painting</h3>
+                <h2>Interior Painting</h2>
                 <p>Interior painting by a professional contract painter with various common paint styles to unique features. Get the best value for your project with Divine Design Painting & Tub. We will bring your project alive with colors that fit your design goals</p>
-                <div class="resident-button">
-                    <a href="" class="btn-fill">Learn More</a>
-                    <a href="" class="btn-outline">See Our Works</a>
+                <div class="resident-btn">
+                    <a href="" class="fill-btn">Learn More</a>
+                    <a href="" class="outline-btn">See Our Works</a>
                 </div>
             </div>
-            <div class="section33">
+            <div class="resident-col">
                 <img src="./images/pic-exterior.png" alt="">
-                <h3>Exterior Painting</h3>
+                <h2>Exterior Painting</h2>
                 <p>Michigan is visited by people all across the world for the beautiful scenery and peaceful neighborhoods. Improve the look of your home with a fresh coat of paint to the exterior</p>
-                <div class="resident-button">
-                    <a href="" class="btn-fill">Learn More</a>
-                    <a href="" class="btn-outline">See Our Works</a>
+                <div class="resident-btn">
+                    <a href="" class="fill-btn">Learn More</a>
+                    <a href="" class="outline-btn">See Our Works</a>
                 </div>
             </div>
-            <div class="section33">
+            <div class="resident-col">
                 <img src="./images/pic-bathtubs.png" alt="">
-                <h3>Resurface Bathtubs</h3>
+                <h2>Resurface Bathtubs</h2>
                 <p>We start by sanding down the tub's surface, fills in cracks and worn areas, then applies several coats of primer and paint before doing a final buffing.</p>
-                <div class="resident-button">
-                    <a href="" class="btn-fill">Learn More</a>
-                    <a href="" class="btn-outline">See Our Works</a>
+                <div class="resident-btn">
+                    <a href="" class="fill-btn">Learn More</a>
+                    <a href="" class="outline-btn">See Our Works</a>
                 </div>
             </div>
-        </section>
-        <!-- Painter Section -->
-        <section id="painter" class="uni-padding">
+        </div>
+    </section>
+    <!-- ======== Residential Section End ======== -->
+    <!-- ======== Painter Section Start ======== -->
+    <section id="painter-section">
+        <div class="container">
             <div class="painter-text">
-                <div class="painter-title">
-                    <h2>Michigan's Best Interior <br> And Exterior Contract Painter</h2>
-                </div>
+                <h2>Michigan's Best Interior<br>And Exterior Contract Painter</h2>
                 <p>Did you know painting in Tri-County requires a license? We are licensed by Michigan to paint interiors and exteriors of residential and commercial buildings. For professional results we use Sherwin Williams products, the industry leader for paint products that last. Call us today for a free onsite review of your project.</p>
                 <a href="">CONTACT US NOW</a>
             </div>
-        </section>
-        <!-- Design Section -->
-        <section id="design-section">
-            <h1 class="section-title">Divine Design Contractor</h1>
-            <div class="title-line-icon text-center">
-                <img src="./images/title-line.jpg" alt="" class="title-line">
-                <img src="./Icons/icon-title-residential.jpg" alt="" class="title-icon">
-                <img src="./images/title-line.jpg" alt="" class="title-line">
+        </div>
+    </section>
+    <!-- ======== Painter Section End ======== -->
+    <!-- ======== Design Section Start ======== -->
+    <section id="design-section" class="container-xl">
+        <h1 class="section-title">Divine Design Contractor</h1>
+        <div class="title-line-icon text-center">
+            <img src="./images/title-line.jpg" alt="" class="title-line">
+            <img src="./Icons/icon-title-residential.jpg" alt="" class="title-icon">
+            <img src="./images/title-line.jpg" alt="" class="title-line">
+        </div>
+        <div class="design-grid">
+            <div class="design50">
+                <img src="./images/banner-interior.jpg" alt="" class="design-img">
+                <img src="./Icons/icon-devine-design-interior.png" alt="" class="design-icon">
             </div>
-            <div class="design-grid">
-                <div class="design50">
-                    <img src="./images/banner-interior.jpg" alt="" class="design-img">
-                    <img src="./Icons/icon-devine-design-interior.png" alt="" class="design-icon">
-                </div>
-                <div class="design50">
-                    <div class="design-text">
-                        <h3>Interior Painting</h3>
-                    <ul>
-                        <li> <span> <img src="./Icons/paintbrush.png" alt=""> </span> Paint By Sherwin Williams</li>
-                        <li> <span> <img src="./Icons/paintbrush.png" alt=""> </span> Water And Oil Based Painting</li>
-                        <li> <span> <img src="./Icons/paintbrush.png" alt=""> </span> Custom And Faux Painting</li>
-                        <li> <span> <img src="./Icons/paintbrush.png" alt=""> </span> Commercial High Performance</li>
-                    </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="design-grid design-exterior">
-                <div class="design50">
-                    <img src="./Icons/icon-devine-design-exterior.png" alt="" class="design-icon-2">
-                    <div class="design-text">
-                        <h3>Exterior Painting</h3>
-                    <ul>
-                        <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Professional Results</li>
-                        <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Improves Curb Appeal</li>
-                        <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Increase Home Value</li>
-                        <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Commercial High Performance</li>
-                    </ul>
-                    </div>
-                </div>
-                <div class="design50">
-                    <img src="./images/banner-exterior.jpg" alt="" class="design-img">
+            <div class="design50">
+                <div class="design-text">
+                    <h3>Interior Painting</h3>
+                <ul>
+                    <li> <span> <img src="./Icons/paintbrush.png" alt=""> </span> Paint By Sherwin Williams</li>
+                    <li> <span> <img src="./Icons/paintbrush.png" alt=""> </span> Water And Oil Based Painting</li>
+                    <li> <span> <img src="./Icons/paintbrush.png" alt=""> </span> Custom And Faux Painting</li>
+                    <li> <span> <img src="./Icons/paintbrush.png" alt=""> </span> Commercial High Performance</li>
+                </ul>
                 </div>
             </div>
-            <div class="design-grid design-exterior-500">
-                <div class="design50">
-                    <img src="./images/banner-exterior.jpg" alt="" class="design-img">
-                </div>
-                <div class="design50">
-                    <img src="./Icons/icon-devine-design-exterior.png" alt="" class="design-icon-2">
-                    <div class="design-text">
-                        <h3>Exterior Painting</h3>
-                    <ul>
-                        <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Professional Results</li>
-                        <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Improves Curb Appeal</li>
-                        <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Increase Home Value</li>
-                        <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Commercial High Performance</li>
-                    </ul>
-                    </div>
+        </div>
+        <div class="design-grid design-exterior">
+            <div class="design50">
+                <img src="./Icons/icon-devine-design-exterior.png" alt="" class="design-icon-2">
+                <div class="design-text">
+                    <h3>Exterior Painting</h3>
+                <ul>
+                    <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Professional Results</li>
+                    <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Improves Curb Appeal</li>
+                    <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Increase Home Value</li>
+                    <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Commercial High Performance</li>
+                </ul>
                 </div>
             </div>
-            <div class="design-grid">
-                <div class="design50">
-                    <img src="./images/banner-bathtubs.jpg" alt="" class="design-img">
-                    <img src="./Icons/icon-devine-design-bathtubs.png" alt="" class="design-icon">
-                </div>
-                <div class="design50">
-                    <div class="design-text">
-                        <h3>Resurface Bathtubs</h3>
-                    <ul>
-                        <li> <span> <img src="./Icons/bath-tub.png" alt=""> </span>Sanding Surface</li>
-                        <li> <span> <img src="./Icons/bath-tub.png" alt=""> </span>Filling Cracks And Worn Areas</li>
-                        <li> <span> <img src="./Icons/bath-tub.png" alt=""> </span>Applying Several Coats Of Primer</li>
-                        <li> <span> <img src="./Icons/bath-tub.png" alt=""> </span>Restoring Shine Of Bathtubs</li>
-                    </ul>
-                    </div>
+            <div class="design50">
+                <img src="./images/banner-exterior.jpg" alt="" class="design-img">
+            </div>
+        </div>
+        <div class="design-grid design-exterior-500">
+            <div class="design50">
+                <img src="./images/banner-exterior.jpg" alt="" class="design-img">
+            </div>
+            <div class="design50">
+                <img src="./Icons/icon-devine-design-exterior.png" alt="" class="design-icon-2">
+                <div class="design-text">
+                    <h3>Exterior Painting</h3>
+                <ul>
+                    <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Professional Results</li>
+                    <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Improves Curb Appeal</li>
+                    <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Increase Home Value</li>
+                    <li> <span> <img src="./Icons/paint-roller.png" alt=""> </span>Commercial High Performance</li>
+                </ul>
                 </div>
             </div>
-        </section>
-        <!-- Review Section -->
-        <section id="review-section" class="uni-padding">
-            <h1 class="section-title">Real Reviews</h1>
-            <div class="title-line-icon text-center">
-                <img src="./images/title-line.jpg" alt="" class="title-line">
-                <img src="./Icons/icon-title-residential.jpg" alt="" class="title-icon">
-                <img src="./images/title-line.jpg" alt="" class="title-line">
+        </div>
+        <div class="design-grid">
+            <div class="design50">
+                <img src="./images/banner-bathtubs.jpg" alt="" class="design-img">
+                <img src="./Icons/icon-devine-design-bathtubs.png" alt="" class="design-icon">
             </div>
-            <div class="section33 review-height">
-                <img src="./images/pic-reviews-quotes.png" alt="" class="review-img">
-                <h4>Tequentin Hutson</h4>
+            <div class="design50">
+                <div class="design-text">
+                    <h3>Resurface Bathtubs</h3>
+                <ul>
+                    <li> <span> <img src="./Icons/bath-tub.png" alt=""> </span>Sanding Surface</li>
+                    <li> <span> <img src="./Icons/bath-tub.png" alt=""> </span>Filling Cracks And Worn Areas</li>
+                    <li> <span> <img src="./Icons/bath-tub.png" alt=""> </span>Applying Several Coats Of Primer</li>
+                    <li> <span> <img src="./Icons/bath-tub.png" alt=""> </span>Restoring Shine Of Bathtubs</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== Design Section End ======== -->
+    <!-- ======== Review Section Start ======== -->
+    <section id="review-section" class="container">
+        <h1 class="section-title">Real Reviews</h1>
+        <div class="title-line-icon text-center">
+            <img src="./images/title-line.jpg" alt="" class="title-line">
+            <img src="./Icons/icon-title-residential.jpg" alt="" class="title-icon">
+            <img src="./images/title-line.jpg" alt="" class="title-line">
+        </div>
+        <div class="row column">
+            <div class="review-col">
+                <img src="./images/pic-reviews-quotes.png" alt="">
+                <h3>Tequentin Hutson</h3>
                 <p>After seeing how great of a job he did on the sinks we called Divine design back to get our home painted.</p>
-                    <a href="" class="btn-review">Read More</a>
+                <a href="" class="outline-btn">Read More</a>
             </div>
-            <div class="section33 review-height">
-                <img src="./images/pic-reviews-quotes.png" alt="" class="review-img">
-                <h4>Len Gallo</h4>
+            <div class="review-col review-col-2">
+                <img src="./images/pic-reviews-quotes.png" alt="">
+                <h3>Tequentin Hutson</h3>
                 <p>After seeing how great of a job he did on the sinks we called Divine design back to get our home painted.</p>
-                    <a href="" class="btn-review">Read More</a>
+                <a href="" class="outline-btn">Read More</a>
             </div>
-            <div class="section33 review-height">
-                <img src="./images/pic-reviews-quotes.png" alt="" class="review-img">
-                <h4>Mark & Dena</h4>
+            <div class="review-col review-col-3">
+                <img src="./images/pic-reviews-quotes.png" alt="">
+                <h3>Tequentin Hutson</h3>
                 <p>After seeing how great of a job he did on the sinks we called Divine design back to get our home painted.</p>
-                    <a href="" class="btn-review">Read More</a>
+                <a href="" class="outline-btn">Read More</a>
             </div>
-        </section>
-        <!-- Footer Top Section -->
-        <section id="footer-top-section" class="uni-padding">
-            <div class="address-info">
-                <div class="section25">
-                    <img src="./images/logo-footer.png" alt="" class="footer-logo">
+        </div>
+    </section>
+    <!-- ======== Review Section End ======== -->
+    <!-- ======== Contact Us Section End ======== -->
+    <section id="contact-us-section">
+        <div class="container">
+            <div class="row column">
+                <div class="contact-col">
+                    <img src="./images/logo-footer.png" alt="">
                 </div>
-                <div class="section25 address">
-                    <div class="icon-sec">
-                        <img src="./Icons/icon-footer-phone.png" alt="">
-                    </div>
-                    <div class="info-sec">
-                        <p>(586) 277-2097 <br>MICHIGAN </p>
-                    </div>
-                </div>
-                <div class="section25 address">
-                    <div class="icon-sec">
-                        <img src="./Icons/icon-footer-clock.png" alt="">
-                    </div>
-                    <div class="info-sec">
-                        <p>Mo - Sa: 8AM - 6PM <br>Su: Day Off</p>
+                <div class="contact-col">
+                    <div class="row">
+                        <div class="contact-info-left">
+                            <img src="./Icons/icon-footer-phone.png" alt="">
+                        </div>
+                        <div class="contact-info-right">
+                            <h3>(586) 277-2097</h3>
+                            <h3>MICHIGAN</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="section25 address">
-                    <div class="icon-sec">
-                        <img src="./Icons/icon-footer-location.png" alt="">
+                <div class="contact-col">
+                    <div class="row">
+                        <div class="contact-info-left">
+                            <img src="./Icons/icon-footer-clock.png" alt="">
+                        </div>
+                        <div class="contact-info-right">
+                            <h3>Mo - Sa: 8AM - 6PM</h3>
+                            <h3>Su: Day Off</h3>
+                        </div>
                     </div>
-                    <div class="info-sec">
-                        <p>48613 KELLY LEA LANE, <br> CHESTERFIELD, MI 48051</p>
+                </div>
+                <div class="contact-col">
+                    <div class="row">
+                        <div class="contact-info-left">
+                            <img src="./Icons/icon-footer-location.png" alt="">
+                        </div>
+                        <div class="contact-info-right">
+                            <h3>48613 KELLY LEA LANE,</h3>
+                            <h3>CHESTERFIELD, MI 48051</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-            <div class="bottom-nav-section">
-                <div class="section20">
+            <div class="row column bottom-nav">
+                <div class="bottom-nav-left">
                     <img src="./Icons/icon-top-google.png" alt="">
                 </div>
-                <div class="section80">
-                    <nav class="bottom-nav">
-                        <ul>
-                            <li><a href="">Interior </a></li>
-                            <li class="exterior"><a href="">Exterior</a></li>
+                <div class="bottom-nav-right">
+                    <nav>
+                        <ul class="nav-item">
+                            <li><a href="">Interior</a></li>
+                            <li><a href="" class="exterior">Exterior</a></li>
                             <li><a href="">Reglaze Bathtubs</a></li>
                             <li><a href="">Color Chart</a></li>
                             <li><a href="">Gallary</a></li>
@@ -274,11 +296,16 @@
                     </nav>
                 </div>
             </div>
-        </section>
-        <!-- Footer Section -->
-        <footer>
+        </div>
+    </section>
+    <!-- ======== Contact Us Section End ======== -->
+    <!-- ======== Footer Section End ======== -->
+    <footer>
             <p>Designed by WebmastersDesktop &copy; 2022 All Rights Reserved.</p>
-        </footer>
-        <script src="./js/script.js"></script>
-    </body>
+    </footer>
+    <!-- ======== Footer Section End ======== -->
+
+    <!-- Custom Js -->
+    <script src="./js/main.js"></script>
+</body>
 </html>

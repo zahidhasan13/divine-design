@@ -1,103 +1,126 @@
-/* Font */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Roboto:wght@400;700&display=swap');
-*{
+:root {
+    --primary: #3b2670;
+    --normal: #ffffff;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+
+
+    --container-width-xxl: 50%;
+    --container-width-xl: 60%;
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+    --container-width-xsm: 96%;
+
+    --top-bg: url(../images/banner-top.jpg);
+    --middle-bg: url(../images/banner-text.jpg);
+}
+
+/* Universal selector  */
+* {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    outline-offset: none;
+    border: none;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #3b2670;
-}
-ul{
-    list-style: none;
-}
-a{
     text-decoration: none;
-    color: #3b2670;
+    list-style: none;
+    transition: all 0.5s linear;
+    scroll-behavior: smooth;
 }
-.uni-padding{
-    padding: 0 40px;
+body {
+    color: var(--primary);
 }
-#mobile-menu, #navmenu ul #mobile-cross{
-    display: none;
+
+.container {
+    width: var(--container-width-md);
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+}
+p{
+    color: #373737;
 }
 .design-exterior-500{
     display: none;
 }
-/* Header */
-header{}
-#navbar{
-    height: 60px;
-    overflow: auto;
-    clear: both;
+#mobile-menu, #navmenu #mobile-cross{
+    display: none;
+}
+/* Header Section Start */
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 .logo{
-    width: 20%;
-    float: left;
-    margin-top: 10px;
+    flex-basis: 18%;
 }
 .logo img{
-    width: 120px;
-    float: left;
+    width: 150px;
 }
 #navmenu{
-    width: 60%;
-    float: left;
-    margin-top: 20px;
-}
-#navmenu ul{
+    flex-basis: 75%;
     text-align: center;
 }
-#navmenu ul li{
+#navmenu .nav-item{}
+#navmenu .nav-item li{
     display: inline-block;
     margin-right: 20px;
 }
-#navmenu ul li a{}
+#navmenu .nav-item li a{}
+#navmenu .nav-item li a:hover{}
 .contact-number{
-    width: 20%;
-    float: right;
-    text-align: right;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin-top: 10px;
+    flex-basis: 25%;
 }
-.contact-number img{
-    width: 40px;
-    margin-right: 10px;   
+.contact-number .top-icon{
+    display: inline-block;
+    background: var(--primary);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: var(--normal);
+    text-align: center;
+    font-size: 1.2rem;
 }
-/* Banner */
+.contact-number span i{
+    margin-top: 7px;
+}
+.contact-number span{}
+/* Header Section End */
+/* Banner Section Start */
 #banner{
-    background: url(../images/banner-top.jpg);
+    background: var(--top-bg) no-repeat;
+    background-position: center;
     background-size: cover;
-    background-position: center center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    
 }
 .banner-text{
-    width: 40%;
-    padding-top: 150px;
-    padding-bottom: 50px;
+    width: 42%;
     text-align: center;
 }
 .banner-text h1{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: 'Barlow', sans-serif;
     margin-bottom: -10px;
 }
 .top-title-line{
-    margin-top: -20px;
+    margin-top: -25px;
     margin-bottom: 10px;
 }
 .top-title-line img{
     width: 50px;
 }
 .banner-text h3{
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: normal;
 }
-.banner-text a, .painter-text a{
+.banner-text a{
     display: block;
     background: url(../Buttons/button-top-banner.png) no-repeat;
     background-size: contain;
@@ -109,16 +132,16 @@ header{}
 }
 .banner-text .google-top{
     width: 150px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
-/* Residential  */
-#residential-section{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    overflow: auto;
+/* Banner Section End */
+
+/* Residential  Section Start */
+#resident-section{
+    padding: 50px 0;
 }
 .section-title{
-    font-size: 36px;
+    font-size: 2.3rem;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -135,74 +158,79 @@ header{}
 .title-line-icon .title-line{
     width: 300px;
 }
-.section33{
-    width: 33.33%;
-    float: left;
-    text-align: center;
-    padding: 0 30px;
-    height: 350px;
+.resident-col{
+    flex-basis: 30%;
     position: relative;
+    height: 350px;
 }
-.section33 img{
-    width: 300px;
-    margin-bottom: 20px;
+.resident-col img{
+   
 }
-.section33 h3{
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 20px;
-    border-bottom: 4px solid #3b2670;
+.resident-col h2{
+    font-size: 1.5rem;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--primary);
 }
-.section33 p{
-    color: #363636;
-    text-align: left;
+.resident-col p{
+    font-size: 1rem;
+    margin: 10px 0;
 }
-.resident-button{
+.resident-btn{
     position: absolute;
+    left: 0;
     bottom: 0;
 }
-.resident-button .btn-fill{
-    display: inline-block;
+.resident-btn .fill-btn{
     background: #e97530;
-    padding: 10px 30px;
-    color: #fff;
-    font-size: 15px;
-    margin-right: 65px;
+    padding: 0.5rem 1rem;
+    margin-right: 108px;
+    color: var(--normal);
 }
-.resident-button .btn-outline{
-    display: inline-block;
+.resident-btn .fill-btn:hover{
+    background: #3b2670;
+}
+.outline-btn{
     border: 1px solid #3b2670;
-    padding: 10px 30px;
-    font-size: 15px;
+    padding: 0.5rem 1rem;
 }
-/* Painter */
-#painter{
-    background: url(../images/banner-text.jpg);
+.outline-btn:hover{
+    border: 1px solid #e97530;
+    background: #e97530;
+    color: var(--normal);
+}
+/* Residential  Section End */
+
+/* Painter  Section End */
+#painter-section{
+    background: var(--middle-bg) no-repeat;
+    background-position: center;
     background-size: cover;
-    background-position: center center;
+    padding: 50px 0;
 }
 .painter-text{
     width: 40%;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
-.painter-title{
-    border: 3px solid #3b2670;
-    padding: 20px 0 20px 20px;
-    margin-bottom: 50px;
-}
-.painter-title h2{
-    font-size: 30px;
+.painter-text h2{
+    font-size: 2rem;
+    border: 3px solid var(--primary);
+    padding: 20px;
+    display: inline-block;
 }
 .painter-text p{
-    font-size: 15px;
-    color: #373737;
+    margin: 60px 0;
 }
 .painter-text a{
-    text-align: center;
-    margin-top: 50px;
+    display: inline-block;
+    background: url(../Buttons/button-top-banner.png) no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding: 30px 60px;
+    color: #fff;
 }
-/* Design Section */
+/* Painter  Section End */
+
+/* Design  Section Start */
 #design-section{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -249,106 +277,80 @@ header{}
     width: 20px;
     margin-right: 5px;
 }
-/* Review Section */
-.section33 .review-img{
-    margin-bottom: 0;
+/* Design  Section End */
+/* Review  Section Start */
+#review-section{
+    margin-bottom: 50px;
 }
-.section33 h4{
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-.section33 .btn-review{
-    display: inline-block;
-    border: 1px solid #3b2670;
-    padding: 10px 30px;
-    font-size: 18px;
-    margin-top: 50px;
-}
-.review-height{
-    height: 250px;
-}
-/* Footer Top Section */
-#footer-top-section{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: #F6F1EB;
-    overflow: auto;
-}
-.address-info{
-    clear: both;
-    overflow: auto;
-    margin-bottom: 40px;
-}
-.section25{
-    width: 25%;
-    float: left;
+.review-col{
+    flex-basis: 30%;
     text-align: center;
-    overflow: auto;
 }
-.section25 .footer-logo{
-   width: 250px;
-  
+.review-col img{}
+.review-col h3{
+    font-size: 1.1rem;
+    text-align: center;
 }
-.section25 .footer-icon{
+.review-col p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+/* Review  Section End */
+
+/* Contact Us  Section End */
+#contact-us-section{
+    background: #F6F1EB;
+    padding: 50px 0;
+}
+.contact-col{
+    flex-basis: 25%;
+    text-align: center;
+}
+.contact-col img{
+    width: 200px;
+}
+.contact-col .row{
+    justify-content: space-evenly;
+}
+.contact-info-left{
+    flex-basis: 30%;
+}
+.contact-info-left img{
     width: 40px;
 }
-.address{
-    margin-top: 40px;
+.contact-info-right{
+    flex-basis: 70%;
 }
-.icon-sec{
-    width: 30%;
-    float: left;
+.contact-info-right h3{
+    font-size: 1rem;
+    text-align: left;
+}
+.bottom-nav-left{
+    flex-basis: 20%;
     text-align: right;
 }
-.icon-sec img{
-    width: 40px;
-}
-.info-sec{
-    width: 65%;
-    float: left;
-    text-align: left;
-    margin-left: 5px;
-    font-weight: 700;
-    color: #3b2670;
-}
-/* bottom-nav-section */
-.bottom-nav-section{
-    overflow: auto;
-    clear: both;
-    margin-left: 125px;
-}
-.section20{
-    width: 20%;
-    float: left;
-}
-.section20 img{
+.bottom-nav-left img{
     width: 150px;
 }
-.section80{
-    width: 80%;
-    float: left;
-    margin-top: 30px;
-    text-align: right;
+.bottom-nav-right{
+    flex-basis: 70%;
 }
-.bottom-nav ul{
-    display: flex;
-}
-.bottom-nav ul li{
-    margin-left: 20px;
-    font-size: 18px;
-}
-.bottom-nav ul .exterior a{
-    background: #3b2670;
-    color: #fff;
+.bottom-nav-right .nav-item .exterior{
+    display: inline-block;
+    background: var(--primary);
     padding: 10px 20px;
+    color: var(--normal);
 }
-/* Footer */
+/* Contact Us  Section End */
+/* Footer  Section End */
 footer{
-    background: #3b2670;
+    background: var(--primary);
     padding: 20px 0;
     text-align: center;
 }
 footer p{
-    color: #fff;
-    font-size: 18px;
+    font-size: 1rem;
+    color: var(--normal);
 }
+/* Footer  Section End */
